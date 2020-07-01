@@ -1,0 +1,345 @@
+/*=====================
+Geral
+=====================*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+
+* {
+  font-family: "Montserrat", sans-serif;
+}
+
+/*=====================
+Variaveis
+=====================*/
+
+body {
+  width: 100%;
+}
+
+/*=====================
+Header
+=====================*/
+.full-bg {
+  height: 98vh;
+  background-image: url(../img/background2.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.main-content {
+  background-position: center;
+  transform: translateY(calc(-100% - 3rem));
+  width: 100%;
+  align-items: center;
+  position: absolute;
+}
+
+.text-center {
+  color: #333333;
+}
+
+.main-button {
+  position: absolute;
+  left: 50%;
+  margin-left: -130px;
+  color: white;
+  background-color: #7196ba;
+}
+.button {
+  color: white;
+  background-color: #7196ba;
+}
+
+.button:hover,
+.main-button:hover {
+  background: #133856;
+  transition: 0.5s;
+}
+
+.titulo {
+  font-size: 32px;
+  text-transform: uppercase;
+  font-weight: 800;
+  margin: 0;
+}
+
+.sub-titulo {
+  font-size: 20px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.text {
+  font-size: 16px;
+}
+
+.container {
+  padding: 150px 0 0 50px;
+}
+
+@media (max-width: 1400px) {
+  .full-bg {
+    background-position: center;
+    background-size: 75%;
+  }
+
+  .titulo {
+    font-size: 27px;
+  }
+
+  .sub-titulo {
+    font-size: 1rem;
+  }
+
+  .text {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 960px) {
+  .full-bg {
+    background-position: center;
+    background-size: 100%;
+  }
+
+  .titulo {
+    font-size: 25px;
+  }
+
+  .sub-titulo {
+    font-size: 18px;
+  }
+
+  .text {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 768px) {
+  .full-bg {
+    height: 80vh;
+    background-position: center;
+    background-size: 100%;
+  }
+
+  .titulo {
+    font-size: 20px;
+  }
+
+  .sub-titulo {
+    font-size: 15px;
+  }
+
+  .text {
+    font-size: 13px;
+  }
+}
+
+/*=====================
+Navbar
+=====================*/
+
+.navbar {
+  background: rgb(255, 255, 255);
+}
+
+.nav-item,
+.nav-link {
+  color: #333333 !important;
+}
+
+.navbar-toggler,
+.navbar-toggler-icon,
+.collapsed,
+.navbar-collapse,
+.collapse {
+  background: rgb(255, 255, 255);
+  color: #333333 !important;
+}
+
+.navbar-light .navbar-toggler-icon {
+  background-image: unset;
+}
+
+.navbar-light .navbar-toggler {
+  border: 0;
+}
+
+.navbar-toggler-icon .hamburguer-unit {
+  display: block;
+  height: 3px;
+  width: 100%;
+  background-color: #000;
+  margin-top: 4px;
+}
+
+.navbar-toggler-icon .hamburguer-unit:first-child {
+  margin-top: 5px;
+}
+
+/*=====================
+Checkbox
+=====================*/
+.check {
+  cursor: pointer;
+  text-indent: -9999px;
+  width: 52px;
+  height: 27px;
+  background: grey;
+  float: left;
+  border-radius: 100px;
+  position: relative;
+}
+
+.check::after {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  border-radius: 90px;
+  transition: 0.3s;
+}
+
+.toggle:checked + .check {
+  background-color: #7196ba;
+}
+
+.toggle:checked + .check::after {
+  left: calc(100% - 5px);
+  transform: translateX(-100%);
+}
+
+.check:active:after {
+  width: 45px;
+}
+
+/*=====================
+oculta
+=====================*/
+#projetos {
+  display: none;
+}
+
+/*=====================
+Card Projetos
+=====================*/
+.card-deck {
+  margin-top: 100px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.card-body,
+.card-footer,
+.card {
+  background-color: rgb(255, 255, 255);
+}
+
+/*=====================
+Modal
+=====================*/
+.modal {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal-body,
+.modal-header,
+.modal-content,
+.modal-footer {
+  background-color: #fcfcfc;
+}
+
+.form-group,
+.modal-title {
+  color: #333333;
+}
+
+.span {
+  color: #333333;
+}
+
+.toggle [type="checkbox"] {
+  height: 0;
+  width: 0;
+  visibility: none;
+}
+
+/*=====================
+Dark-mode
+=====================*/
+
+.dark-mode-switch .escuro {
+  background: -webkit-linear-gradient(
+    rgb(31, 31, 31),
+    rgb(19, 19, 19),
+    rgba(0, 0, 0)
+  );
+}
+
+.dark-mode-switch,
+.dark-mode-switch .navbar,
+.dark-mode-switch .navbar-toggler,
+.dark-mode-switch .navbar-toggler-icon,
+.dark-mode-switch .navbar-toggler,
+.dark-mode-switch .navbar-toggler-icon,
+.dark-mode-switch .collapsed,
+.dark-mode-switch .navbar-collapse,
+.dark-mode-switch .collapse {
+  background-color: rgb(31, 31, 31) !important;
+}
+
+.dark-mode-switch .card-body,
+.dark-mode-switch .card-footer {
+  background: #363636 !important;
+}
+
+.dark-mode-switch .card {
+  background: #1c1c1c !important;
+}
+
+.dark-mode-switch .navbar-brand,
+.dark-mode-switch .dark,
+.dark-mode-switch .navbar-toggler,
+.dark-mode-switch .navbar-toggler-icon,
+.dark-mode-switch .collapsed,
+.dark-mode-switch .navbar-collapse,
+.dark-mode-switch .collapse,
+.dark-mode-switch .navbar-light .navbar-nav .nav-link {
+  color: #fff !important;
+}
+
+.dark-mode-switch .navbar-toggler-icon,
+.dark-mode-switch .navbar-toggler-icon .hamburguer-unit {
+  background: #fff;
+}
+
+.dark-mode-switch .modal-content {
+  background: #1b1b1b !important;
+}
+
+.dark-mode-switch .modal-body,
+.dark-mode-switch .modal-header,
+.dark-mode-switch .modal-footer {
+  background-color: transparent;
+}
+
+.dark-mode-switch .modal-title,
+.dark-mode-switch .form-group {
+  color: #fff;
+}
+
+.rodape-hp {
+  position: absolute;
+  bottom: 7rem;
+
+}
+
+.logos {
+  display: grid;
+  float: right;
+  width: 5%;
+}
+

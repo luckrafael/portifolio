@@ -240,7 +240,6 @@ Footer
 
 .logos {
   display: block;
-  vertical-align:middle;
   width: 2rem;
   overflow: hidden;
 }
@@ -267,7 +266,6 @@ Footer
 
   .logos {
     display: block;
-    vertical-align:middle;
     width: 1.2rem;
     overflow: hidden;
   }
@@ -296,7 +294,6 @@ Footer
 
   .logos {
     display: block;
-    vertical-align:middle;
     width: 1rem;
     overflow: hidden;
   }
